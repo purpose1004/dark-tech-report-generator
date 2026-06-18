@@ -1,5 +1,7 @@
 # Dark-Tech Report Generator
 
+**English** | [简体中文](README.zh-CN.md)
+
 Turn a structured `report.json` into a dark-tech, **editable** PowerPoint (`.pptx`) work report — monthly, quarterly, half-year, or annual. Data and styling are separated, so you change the JSON and re-run; the deck stays consistent. The output is a real `.pptx` you can keep editing in PowerPoint / Keynote / WPS.
 
 Works on any agent harness (Claude Code / Cursor / Codex) or as a plain CLI. Pure JS, offline, deterministic.
@@ -49,4 +51,4 @@ pdftoppm -png out.pdf slide      # one PNG per slide
 Or just open the `.pptx`.
 
 ## License
-MIT (add a `LICENSE` file before publishing).
+[MIT](./LICENSE)
