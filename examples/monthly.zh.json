@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "locale": "zh",
+    "title": "20XX 年 X 月工作汇报",
+    "eyebrow": "MONTHLY REVIEW · 示例团队",
+    "period": "20XX.0X · MONTHLY",
+    "author": "示例汇报人",
+    "dept": "示例部门",
+    "date": "20XX.0X",
+    "summary": "本月围绕产品迭代、稳定性与新方向探索三条线推进，整体按计划落地，关键指标稳中有升。",
+    "labels": { "kpiCols": { "kpi": "本月目标", "actual": "实际进展" } },
+    "next_title": "下月规划",
+    "summary_slogan": "稳步迭代，持续交付。"
+  },
+  "cover": {
+    "info_cards": [
+      { "label": "核心主线", "value": "3 条", "note": "迭代 / 稳定性 / 新方向" },
+      { "label": "整体进度", "value": "按计划达成", "note": "无重大风险" }
+    ]
+  },
+  "metrics": [
+    { "label": "需求交付", "value": "12", "unit": "项", "note": "覆盖 3 个模块" },
+    { "label": "缺陷修复", "value": "37", "unit": "个", "note": "线上零事故" },
+    { "label": "可用性", "value": "99.9", "unit": "%", "note": "达成 SLA" }
+  ],
+  "kpi_scorecard": [
+    {
+      "category": "核心目标",
+      "items": [
+        { "kpi": "完成结算模块重构", "actual": "重构完成并灰度上线", "status": "达成" },
+        { "kpi": "首屏加载优化 30%", "actual": "实测优化 42%", "status": "超额" },
+        { "kpi": "搜索体验升级", "actual": "交互改版进行中", "status": "进行中" }
+      ]
+    },
+    {
+      "category": "团队 · 质量 · 探索",
+      "merged": true,
+      "items": [
+        { "cat": "团队建设", "kpi": "沉淀组件库规范", "actual": "已输出初稿，待评审", "status": "进行中" },
+        { "cat": "质量保障", "kpi": "核心链路自动化测试", "actual": "覆盖率达 60%", "status": "铺垫中" },
+        { "cat": "创新探索", "kpi": "AI 辅助研发试点", "actual": "排期在下季度", "status": "节点未到" }
+      ]
+    }
+  ],
+  "main_lines": [
+    {
+      "name": "产品迭代",
+      "subtitle": "三步走",
+      "timeline": [
+        { "month": "第 1 周", "title": "需求评审", "desc": "锁定本月范围与优先级" },
+        { "month": "第 2-3 周", "title": "开发联调", "desc": "核心模块开发与接口联调" },
+        { "month": "第 4 周", "title": "灰度上线", "desc": "灰度验证后全量发布" }
+      ],
+      "value": "形成可复用的迭代节奏，交付更可预期。"
+    },
+    {
+      "name": "稳定性",
+      "subtitle": "持续保障",
+      "points": ["核心链路监控与告警完善", "慢查询治理，P95 下降明显", "发布流程加灰度与一键回滚"]
+    },
+    {
+      "name": "新方向探索",
+      "points": ["调研 AI 辅助研发可行性", "完成内部小工具 PoC"]
+    }
+  ],
+  "highlights": [
+    { "title": "结算模块重构", "headline": "性能与可维护性双提升", "points": ["首屏加载优化 42%", "代码复杂度下降，可维护性提升"] },
+    { "title": "稳定性建设", "headline": "线上零事故", "points": ["监控告警覆盖核心链路", "发布流程加入灰度与回滚"] }
+  ],
+  "issues": [
+    { "title": "规范待统一", "content": "组件库规范初稿已出，建议尽快评审并落地执行。" },
+    { "title": "测试覆盖", "content": "核心链路自动化测试覆盖率偏低，建议作为下月专项。" }
+  ],
+  "next_half": [
+    { "goal": "搜索体验升级", "milestone": "完成交互改版并上线", "node": "下月" },
+    { "goal": "自动化测试", "milestone": "核心链路覆盖率提升至 80%", "node": "下月" },
+    { "goal": "AI 辅助研发", "milestone": "试点落地一个实际场景", "node": "下季度" }
+  ],
+  "summary": "本月按计划推进产品迭代与稳定性建设，关键目标达成、部分超额；规范统一与测试覆盖将在下月作为重点补齐。"
+}

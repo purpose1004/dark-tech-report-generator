@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "locale": "en",
+    "title": "Monthly Report · 20XX.0X",
+    "eyebrow": "MONTHLY REVIEW · Sample Team",
+    "period": "20XX.0X · MONTHLY",
+    "author": "Sample Author",
+    "dept": "Sample Team",
+    "date": "20XX.0X",
+    "summary": "This month advanced on three fronts: product iteration, reliability, and exploration. Overall on track with key metrics trending up.",
+    "fonts": { "latin": "Arial", "mono": "Consolas" },
+    "next_title": "Next Month",
+    "summary_slogan": "Ship steadily."
+  },
+  "cover": {
+    "info_cards": [
+      { "label": "WORKSTREAMS", "value": "3", "note": "Iteration / Reliability / Exploration" },
+      { "label": "STATUS", "value": "On track", "note": "No major risks" }
+    ]
+  },
+  "metrics": [
+    { "label": "FEATURES SHIPPED", "value": "12", "note": "across 3 modules" },
+    { "label": "BUGS FIXED", "value": "37", "note": "zero incidents" },
+    { "label": "UPTIME", "value": "99.9", "unit": "%", "note": "SLA met" }
+  ],
+  "kpi_scorecard": [
+    {
+      "category": "Core Goals",
+      "items": [
+        { "kpi": "Refactor checkout module", "actual": "Done, rolled out to canary", "level": "done", "status": "Done" },
+        { "kpi": "Cut first-paint by 30%", "actual": "Measured 42% improvement", "level": "done", "status": "Exceeded" },
+        { "kpi": "Search UX upgrade", "actual": "Redesign in progress", "level": "doing", "status": "In progress" }
+      ]
+    },
+    {
+      "category": "Team · Quality · Exploration",
+      "merged": true,
+      "items": [
+        { "cat": "Team", "kpi": "Component library guidelines", "actual": "Draft out, pending review", "level": "doing", "status": "In progress" },
+        { "cat": "Quality", "kpi": "E2E tests on core flows", "actual": "60% coverage", "level": "doing", "status": "Ramping" },
+        { "cat": "Exploration", "kpi": "AI-assisted dev pilot", "actual": "Scheduled next quarter", "level": "pending", "status": "Upcoming" }
+      ]
+    }
+  ],
+  "main_lines": [
+    {
+      "name": "Product Iteration",
+      "subtitle": "three steps",
+      "timeline": [
+        { "month": "Week 1", "title": "Scoping", "desc": "Lock scope and priorities" },
+        { "month": "Week 2-3", "title": "Build", "desc": "Core dev and integration" },
+        { "month": "Week 4", "title": "Rollout", "desc": "Canary then full release" }
+      ],
+      "value": "A repeatable cadence makes delivery predictable."
+    },
+    {
+      "name": "Reliability",
+      "subtitle": "always-on",
+      "points": ["Monitoring and alerting on core flows", "Slow-query cleanup, P95 down notably", "Canary + one-click rollback in release flow"]
+    },
+    {
+      "name": "Exploration",
+      "points": ["Assess AI-assisted development", "Built an internal PoC tool"]
+    }
+  ],
+  "highlights": [
+    { "title": "Checkout Refactor", "headline": "Faster and more maintainable", "points": ["First paint improved 42%", "Lower complexity, easier to maintain"] },
+    { "title": "Reliability", "headline": "Zero incidents", "points": ["Alerting covers core flows", "Canary + rollback added"] }
+  ],
+  "issues": [
+    { "title": "Align guidelines", "content": "Component guidelines drafted; review and adopt soon." },
+    { "title": "Test coverage", "content": "E2E coverage on core flows is low; make it a focus next month." }
+  ],
+  "next_half": [
+    { "goal": "Search UX", "milestone": "Ship the redesign", "node": "Next" },
+    { "goal": "E2E tests", "milestone": "Raise core coverage to 80%", "node": "Next" },
+    { "goal": "AI-assisted dev", "milestone": "Land one real scenario", "node": "Q+1" }
+  ],
+  "summary": "On track this month across iteration and reliability; key goals met, some exceeded. Guideline alignment and test coverage are next month's focus."
+}

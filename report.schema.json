@@ -1,0 +1,173 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/dark-tech-report.schema.json",
+  "title": "Dark-Tech Report",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "title": { "type": "string" },
+        "eyebrow": { "type": "string" },
+        "period": { "type": "string" },
+        "author": { "type": "string" },
+        "dept": { "type": "string" },
+        "date": { "type": "string" },
+        "summary": { "type": "string" },
+        "locale": { "type": "string", "enum": ["zh", "en"], "default": "zh" },
+        "logo": { "type": "string" },
+        "labels": { "type": "object" },
+        "fonts": {
+          "type": "object",
+          "properties": {
+            "zh": { "type": "string" },
+            "latin": { "type": "string" },
+            "mono": { "type": "string" }
+          }
+        },
+        "theme": {
+          "oneOf": [
+            { "type": "string", "enum": ["dark", "midnight", "light"] },
+            { "type": "object" }
+          ]
+        },
+        "highlights_title": { "type": "string" },
+        "next_title": { "type": "string" },
+        "next_eyebrow": { "type": "string" },
+        "summary_slogan": { "type": "string" }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "description": "通用区块模式（任意内容）。若提供则优先于下方汇报快捷键字段。",
+      "items": {
+        "type": "object",
+        "required": ["type"],
+        "additionalProperties": true,
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["cover", "statement", "text", "metrics", "table", "cards", "columns", "timeline", "rows", "summary"]
+          },
+          "eyebrow": { "type": "string" },
+          "title": { "type": "string" },
+          "subtitle": { "type": "string" }
+        }
+      }
+    },
+    "cover": {
+      "type": "object",
+      "properties": {
+        "info_cards": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": { "type": "string" },
+              "value": { "type": ["string", "number"] },
+              "note": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "value"],
+        "properties": {
+          "label": { "type": "string" },
+          "value": { "type": ["string", "number"] },
+          "unit": { "type": "string" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "kpi_scorecard": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": { "type": "string" },
+          "merged": { "type": "boolean" },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "cat": { "type": "string" },
+                "kpi": { "type": "string" },
+                "actual": { "type": "string" },
+                "status": { "type": "string" },
+                "level": { "type": "string", "enum": ["done", "doing", "pending", "bonus"] },
+                "color": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "main_lines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "subtitle": { "type": "string" },
+          "value": { "type": "string" },
+          "timeline": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "month": { "type": "string" },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "desc": { "type": "string" }
+              }
+            }
+          },
+          "points": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "highlights": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "headline": { "type": "string" },
+          "points": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "content": { "type": "string" }
+        }
+      }
+    },
+    "next_half": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "goal": { "type": "string" },
+          "milestone": { "type": "string" },
+          "node": { "type": "string" }
+        }
+      }
+    },
+    "next_plan": { "$ref": "#/properties/next_half" },
+    "summary": { "type": "string" }
+  }
+}

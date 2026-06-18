@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "locale": "zh",
+    "title": "示例：通用区块模式",
+    "theme": "midnight",
+    "author": "示例作者",
+    "date": "20XX"
+  },
+  "sections": [
+    {
+      "type": "cover",
+      "title": "一份关于「专注」的分享",
+      "eyebrow": "TALK · 通用区块演示",
+      "period": "SHARE · 20XX",
+      "author": "示例作者",
+      "cards": [
+        { "label": "主题", "value": "专注的力量", "note": "为什么少即是多" },
+        { "label": "时长", "value": "约 15 分钟", "note": "10 页" }
+      ]
+    },
+    { "type": "statement", "eyebrow": "HOOK", "title": "我们不缺信息，缺的是注意力。", "sub": "这一页只放一句话——statement 区块适合做钩子或章节切换。" },
+    {
+      "type": "text",
+      "eyebrow": "CONTEXT",
+      "title": "背景",
+      "body": [
+        "text 区块用来承载一段或几段叙述性文字，没有表格、没有数字，就是纯粹的内容。",
+        "任何内容都可以放进来：故事、定义、引子、说明——不需要是「汇报」。"
+      ]
+    },
+    {
+      "type": "cards",
+      "eyebrow": "IDEAS",
+      "title": "三个习惯",
+      "items": [
+        { "title": "单线程", "headline": "一次只做一件事", "points": ["关闭通知", "用时间块"] },
+        { "title": "留白", "headline": "给思考留出空间", "points": ["每天 30 分钟不排会"] },
+        { "title": "复盘", "headline": "每周回顾一次", "points": ["写下三件最重要的事"] }
+      ]
+    },
+    {
+      "type": "columns",
+      "eyebrow": "COMPARE",
+      "title": "两种工作方式",
+      "bar": true,
+      "items": [
+        { "title": "被动响应", "points": ["被消息牵着走", "忙碌但无进展", "晚上才开始正事"] },
+        { "title": "主动安排", "points": ["先做重要的事", "批量处理琐事", "可预期地推进"] }
+      ]
+    },
+    {
+      "type": "timeline",
+      "eyebrow": "PROCESS",
+      "title": "一天的节奏",
+      "nodes": [
+        { "label": "上午", "title": "深度工作", "desc": "处理最难、最重要的任务" },
+        { "label": "下午", "title": "协作沟通", "desc": "会议、回复、对齐" },
+        { "label": "傍晚", "title": "复盘收尾", "desc": "记录与计划明天" }
+      ]
+    },
+    {
+      "type": "table",
+      "eyebrow": "TOOLKIT",
+      "title": "趁手的工具",
+      "columns": ["工具", "用途", "推荐度"],
+      "rows": [
+        ["时间块日历", "把任务排进具体时段", { "text": "强烈推荐", "level": "done" }],
+        ["专注计时器", "番茄钟，25 分钟一段", { "text": "推荐", "level": "doing" }],
+        ["收集箱", "临时想法先记下，不打断", { "text": "可选", "level": "pending" }]
+      ],
+      "statusCol": -1
+    },
+    { "type": "statement", "eyebrow": "TAKEAWAY", "title": "专注不是更努力，\n而是更少。", "sub": "Less, but better." }
+  ]
+}

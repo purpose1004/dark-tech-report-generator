@@ -1,0 +1,37 @@
+{
+  "name": "dark-tech-report-generator",
+  "version": "0.3.0",
+  "description": "Turn a report.json into an editable, dark-tech-style PowerPoint (.pptx) work report. i18n (zh/en), theme presets, configurable fonts and status colors.",
+  "type": "commonjs",
+  "bin": {
+    "dark-tech-report": "src/build.js"
+  },
+  "main": "src/build.js",
+  "scripts": {
+    "build": "node src/build.js",
+    "example:zh": "node src/build.js examples/monthly.zh.json out.zh.pptx",
+    "example:en": "node src/build.js examples/monthly.en.json out.en.pptx",
+    "preview": "node scripts/preview.js"
+  },
+  "files": [
+    "src/",
+    "scripts/",
+    "report.schema.json",
+    "examples/",
+    "SKILL.md",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "pptx", "powerpoint", "report", "slides", "deck", "generator",
+    "pptxgenjs", "i18n", "dark-theme", "agent", "skill"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "pptxgenjs": "^3.12.0"
+  },
+  "license": "MIT"
+}

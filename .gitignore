@@ -1,0 +1,5 @@
+node_modules/
+*.pptx
+examples/preview/*.pdf
+*.log
+.DS_Store
